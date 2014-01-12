@@ -1,50 +1,148 @@
 ﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Elise Kalokerinos | School of Psychology</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
+<!--<![endif]-->
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Elise Kalokerinos | University of Queensland</title>
+    <meta name="description" content="Elise Kalokerinos is a PhD Candidate working at the University of Queensland, Australia.">
+    <meta name="author" content="Elise Kalokerinos">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap  -->
+    <link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/bootstrap.min.css")">
+    <!-- web font  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+    <!-- plugin css  -->
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/js-plugin/animation-framework/animate.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/js-plugin/magnific-popup/magnific-popup.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/js-plugin/isotope/css/style.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/js-plugin/flexslider/flexslider.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/js-plugin/pageSlide/jquery.pageslide.css")" />
+    <!-- Owl carousel-->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/js-plugin/owl.carousel/owl-carousel/owl.carousel.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/js-plugin/owl.carousel/owl-carousel/owl.theme.css")" />
+    <!-- icon fonts -->
+    <link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/font-awesome.min.css")" />
+    <!-- Custom css -->
+    <link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/layout.css")" />
+    <link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/blue.css")" />
+    <link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/site.min.css")" />
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script src="@Url.Content("~/Scripts/modernizr-2.6.1.min.js")"></script>
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+</head>
+<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+    <!-- Primary Page Layout
+    ================================================== -->
+    <!-- globalWrapper -->
+    <div id="globalWrapper" class="localscroll">
+        <!-- header -->
+        <header id="mainHeader" class="navbar-fixed-top" role="banner">
+            <div class="container">
+                <nav class="navbar navbar-default scrollMenu" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="index.html"><strong>EliseKalokerinos</strong>.com</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
+                            <li><a href="#news"><i class="icon-comment"></i>News</a> </li>
+                            <li><a href="#services"><i class="icon-thumbs-up"></i>Services</a> </li>
+                            <li><a href="#about"><i class="icon-star"></i>About</a> </li>
+                            <li><a href="#works"><i class="icon-popup-1"></i>Works</a> </li>
+                            <li><a href="#team"><i class="icon-users"></i>Team</a> </li>
+                            <li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
+                        </ul>
+                    </div>
 
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-9813084-28']);
-            _gaq.push(['_trackPageview']);
-
-            (function () {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <p class="site-title">@Html.ActionLink("Elise Kalokerinos", "Index", "Home")</p>
+                </nav>
             </div>
         </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-            <section class="outside-body">
-                @RenderSection("outsideBody", required: false)
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - Elise Kalokerinos</p>
-                </div>
-            </div>
-        </footer>
+        <!-- header -->
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+        <div id="content-wrapper">
+            @RenderBody()
+        </div>
+
+        <!-- footer -->
+            <footer>
+                <section id="mainFooter">
+                    <div class="container" id="footer">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h3>Check out my favourite content:</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-hand-o-right"></i> <a href="http://bencull.com">Ben Cull's Awesome Website</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="footerWidget">
+
+                                    <h3>Contact Me</h3>
+                                    <p>
+                                        <i class="fa fa-envelope"></i>&nbsp;<a href="mailto:elise@elisekalokerinos.com">elise@elisekalokerinos.com</a>
+                                    </p>                                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+            <section id="footerRights">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Website developed by <a href="http://elisekalokerinos.com" target="blank">Elise Kalokerinos</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End footer -->
+</div>
+    <!-- global wrapper -->
+    <!-- End Document
+    ================================================== -->
+    <script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+    <script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+    <!-- third party plugins  -->
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+    <script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+    <script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+    <script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+    <!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+    <script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+    <script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+    <script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+    <!-- Custom  -->
+    <script type="text/javascript" src="@Url.Content("~/Scripts/custom.js")"></script>
+</body>
 </html>
