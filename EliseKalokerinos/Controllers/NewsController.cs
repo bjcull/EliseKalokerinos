@@ -6,11 +6,13 @@ using System.Web.Mvc;
 
 namespace EliseKalokerinos.Controllers
 {
-    public class HomeController : Controller
+    public class NewsController : Controller
     {
+        //
+        // GET: /News/
         public ActionResult Index()
         {
             return View();
         }
-    }
+	}
 }

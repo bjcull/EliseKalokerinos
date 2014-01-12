@@ -57,16 +57,16 @@
                 <nav class="navbar navbar-default scrollMenu" role="navigation">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="navbar-brand" href="index.html"><strong>EliseKalokerinos</strong>.com</a>
+                        <a class="navbar-brand" href="@Url.Action("Index", "Home")"><strong>EliseKalokerinos</strong>.com</a>
                     </div>
                     <div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
                         <ul class="nav navbar-nav pull-right">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#news">Research</a></li>
-                            <li><a href="#services">News</a></li>
-                            <li><a href="#about">Publications</a></li>
-                            <li><a href="#works">Download CV</a></li>
-                            <li><a href="#contactSlice">Contact</a></li>
+                            <li class="@(ViewBag.SelectedMenu == "Home" ? "active" : "")"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                            <li class="@(ViewBag.SelectedMenu == "Research" ? "active" : "")"><a href="@Url.Action("Index", "Research")">Research</a></li>
+                            <li class="@(ViewBag.SelectedMenu == "News" ? "active" : "")"><a href="@Url.Action("Index", "News")">News</a></li>
+                            <li class="@(ViewBag.SelectedMenu == "Publications" ? "active" : "")"><a href="@Url.Action("Index", "Publications")">Publications</a></li>
+                            <li class="@(ViewBag.SelectedMenu == "Downloads" ? "active" : "")"><a href="@Url.Action("Index", "Downloads")">Download CV</a></li>
+                            <li class="@(ViewBag.SelectedMenu == "Contact" ? "active" : "")"><a href="@Url.Action("Index", "Contact")">Contact</a></li>
                         </ul>
                     </div>
 
@@ -85,7 +85,7 @@
                     <div class="container" id="footer">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h3>Check out my favourite content:</h3>
+                                <h3>Latest News:</h3>
                                 <ul class="list-unstyled">
                                     <li><i class="fa fa-hand-o-right"></i> <a href="http://bencull.com">Ben Cull's Awesome Website</a></li>
                                 </ul>

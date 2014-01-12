@@ -6,11 +6,13 @@ using System.Web.Mvc;
 
 namespace EliseKalokerinos.Controllers
 {
-    public class HomeController : Controller
+    public class DownloadsController : Controller
     {
-        public ActionResult Index()
+        //
+        // GET: /Downloads/
+        public ActionResult CV()
         {
-            return View();
+            throw new NotImplementedException();
         }
-    }
+	}
 }
