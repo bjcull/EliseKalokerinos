@@ -191,6 +191,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\austintexas-panorama-small.jpg" />
     <Content Include="Images\EliseKalokerinos.jpg" />
+    <Content Include="Images\journals.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\site.less" />
@@ -198,6 +199,7 @@
     <Content Include="Fonts\fontawesome-webfont.ttf" />
     <Content Include="Fonts\fontawesome-webfont.eot" />
     <Content Include="Fonts\FontAwesome.otf" />
+    <Content Include="Documents\Elise_Kalokerinos_CV.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
