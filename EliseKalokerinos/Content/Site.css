@@ -1,4 +1,8 @@
-﻿#content-wrapper {
+﻿a {
+    color: blue;
+}
+
+#content-wrapper {
     min-height: 600px;
 }
 
@@ -25,8 +29,8 @@ h1.home-header {
     text-align: center;
 }
 
-.navbar-brand {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+.publication-list > li {
+    margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
