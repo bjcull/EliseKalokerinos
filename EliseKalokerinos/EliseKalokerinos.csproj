@@ -166,6 +166,7 @@
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\PublicationsController.cs" />
     <Compile Include="Controllers\ResearchController.cs" />
+    <Compile Include="Controllers\spsp2014Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +185,8 @@
     <Content Include="Content\site.min.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
+    <Content Include="Documents\Elise Kalokerinos Poster spsp2014 full.png" />
+    <Content Include="Documents\Elise Kalokerinos Poster spsp2014 medium.png" />
     <Content Include="Fonts\fontawesome-webfont.svg" />
     <Content Include="Content\layout.css" />
     <Content Include="favicon.ico" />
@@ -192,6 +195,7 @@
     <Content Include="Images\austintexas-panorama-small.jpg" />
     <Content Include="Images\EliseKalokerinos.jpg" />
     <Content Include="Images\journals.jpg" />
+    <Content Include="Images\spsp2014_thumbnail.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\site.less" />
@@ -200,6 +204,7 @@
     <Content Include="Fonts\fontawesome-webfont.eot" />
     <Content Include="Fonts\FontAwesome.otf" />
     <Content Include="Documents\Elise_Kalokerinos_CV.pdf" />
+    <Content Include="Documents\Kalokerinos_DontGrinWhenYouWin.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -355,6 +360,7 @@
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\Publications\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\spsp2014\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

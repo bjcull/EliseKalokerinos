@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
@@ -10,7 +9,34 @@
                 <h1>News</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-padded">
+            <div class="col-sm-4">
+                <a href="@Url.Content("~/Documents/Elise Kalokerinos Poster spsp2014 medium.png")" target="blank" onclick="_gaq.push(['_trackEvent', 'Downloads', 'SPSP2014Poster', 'Thumbnail_News']);"><img class="img-responsive" src="@Url.Content("~/Images/spsp2014_thumbnail.png")" /></a>
+            </div>
+            <div class="col-sm-8">
+                <h2><a href="@Url.Action("Index", "spsp2014")">Don't grin when you win: The social costs of positive emotion expression in performance situations</a></h2>
+                <p>
+                    This poster is quite large and detailed. You can download two different versions depending on what device you're on.
+                </p>
+                <ul>
+                    <li>
+                        <a href="@Url.Content("~/Documents/Elise Kalokerinos Poster spsp2014 medium.png")" target="blank" onclick="_gaq.push(['_trackEvent', 'Downloads', 'SPSP2014Poster', 'Medium_News']);">Download the phone and tablet version (1.9 MB)</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Content("~/Documents/Elise Kalokerinos Poster spsp2014 full.png")" target="blank" onclick="_gaq.push(['_trackEvent', 'Downloads', 'SPSP2014Poster', 'Full_News']);">Download the full version (4.6 MB)</a>
+                    </li>
+                </ul>
+                <p>
+                    You can also download a copy of the paper.
+                </p>
+                <ul>
+                    <li>
+                        <a href="@Url.Content("~/Documents/Kalokerinos_DontGrinWhenYouWin.pdf")" target="blank" onclick="_gaq.push(['_trackEvent', 'Downloads', 'Paper_DontGrin', 'SPSP2014Poster_News']);">Don't grin when you win: The social costs of positive emotion expression in performance situations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-padded">
             <div class="col-sm-4">
                 <img class="img-responsive" src="@Url.Content("~/Images/journals.jpg")" />
             </div>
@@ -29,12 +55,7 @@
                 </p>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="slice">
-    <div class="container">
-        <div class="row">
+        <div class="row row-padded">
             <div class="col-sm-4">
                 <img class="img-responsive" src="@Url.Content("~/Images/austintexas-panorama-small.jpg")" />
             </div>
