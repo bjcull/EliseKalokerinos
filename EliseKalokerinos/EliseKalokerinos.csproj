@@ -183,7 +183,7 @@
       <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Content\site.min.css">
-      <DependentUpon>site.less</DependentUpon>
+      <DependentUpon>site.css</DependentUpon>
     </Content>
     <Content Include="Documents\Elise Kalokerinos Poster spsp2014 full.png" />
     <Content Include="Documents\Elise Kalokerinos Poster spsp2014 medium.png" />
@@ -193,8 +193,10 @@
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\austintexas-panorama-small.jpg" />
+    <Content Include="Images\byronbay.jpg" />
     <Content Include="Images\EliseKalokerinos.jpg" />
     <Content Include="Images\journals.jpg" />
+    <Content Include="Images\sasp_2014.jpg" />
     <Content Include="Images\spsp2014_thumbnail.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -203,8 +205,9 @@
     <Content Include="Fonts\fontawesome-webfont.ttf" />
     <Content Include="Fonts\fontawesome-webfont.eot" />
     <Content Include="Fonts\FontAwesome.otf" />
-    <Content Include="Documents\Elise_Kalokerinos_CV.pdf" />
+    <Content Include="Documents\Elise_Kalokerinos_CV_untilApril2014.pdf" />
     <Content Include="Documents\Kalokerinos_DontGrinWhenYouWin.pdf" />
+    <Content Include="Documents\Elise_Kalokerinos_CV.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
