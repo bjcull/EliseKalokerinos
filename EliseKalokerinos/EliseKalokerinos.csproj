@@ -205,7 +205,6 @@
     <Content Include="Fonts\fontawesome-webfont.ttf" />
     <Content Include="Fonts\fontawesome-webfont.eot" />
     <Content Include="Fonts\FontAwesome.otf" />
-    <Content Include="Documents\Elise_Kalokerinos_CV_untilApril2014.pdf" />
     <Content Include="Documents\Kalokerinos_DontGrinWhenYouWin.pdf" />
     <Content Include="Documents\Elise_Kalokerinos_CV.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
