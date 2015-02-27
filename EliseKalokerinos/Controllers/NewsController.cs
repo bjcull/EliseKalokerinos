@@ -12,7 +12,10 @@ namespace EliseKalokerinos.Controllers
         // GET: /News/
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Home");
+
+            // Hiding News for Now
+            //return View();
         }
 	}
 }

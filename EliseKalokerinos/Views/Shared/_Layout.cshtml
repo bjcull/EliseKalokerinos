@@ -78,7 +78,7 @@
                         <ul class="nav navbar-nav pull-right">
                             <li class="@(ViewBag.SelectedMenu == "Home" ? "active" : "")"><a href="@Url.Action("Index", "Home")">Home</a></li>
                             <li class="@(ViewBag.SelectedMenu == "Research" ? "active" : "")"><a href="@Url.Action("Index", "Research")">Research</a></li>
-                            <li class="@(ViewBag.SelectedMenu == "News" ? "active" : "")"><a href="@Url.Action("Index", "News")">News</a></li>
+                            @*<li class="@(ViewBag.SelectedMenu == "News" ? "active" : "")"><a href="@Url.Action("Index", "News")">News</a></li>*@
                             <li class="@(ViewBag.SelectedMenu == "Publications" ? "active" : "")"><a href="@Url.Action("Index", "Publications")">Publications</a></li>
                             <li class="@(ViewBag.SelectedMenu == "Downloads" ? "active" : "")"><a href="@Url.Content("~/Documents/Elise_Kalokerinos_CV.pdf")" onclick="_gaq.push(['_trackEvent', 'Downloads', 'CV', 'TopMenu']);">Download CV</a></li>
                             <li class="@(ViewBag.SelectedMenu == "Contact" ? "active" : "")"><a href="@Url.Action("Index", "Contact")">Contact</a></li>
