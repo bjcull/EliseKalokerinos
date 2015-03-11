@@ -214,6 +214,7 @@
     <Content Include="Documents\von Hippel &amp; Kalokerinos, 2012.pdf" />
     <Content Include="Documents\von Hippel, Kalokerinos &amp; Henry, 2013.pdf" />
     <Content Include="Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Documents\Kalokerinos, von Hippel, &amp; Henry, 2015.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
